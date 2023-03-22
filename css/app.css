@@ -1,0 +1,75 @@
+body {
+    font-family: 'Open Sans' sans-serif;
+    /*Fonte*/
+}
+
+h1 {
+    text-align: center;
+    /*Alinhamento de texto*/
+}
+
+.container {
+    display: flex;
+    /*Define os tipos de exibição internos e externos de um elemento*/
+    width: auto;
+    /*Largura*/
+    height: 500px;
+    /*Altura*/
+    background-color: #003049;
+    /*Cor de fundo*/
+    margin: 0 auto;
+    /*Define a área de margem nos quatro lados do elemento*/
+    border: 5px solid #003049;
+    /*Borda*/
+    flex-direction: row;
+    /*Padrão a direção em linha*/
+    flex-wrap: wrap;
+    /*Força os itens a ficarem dentro do espaço do container*/
+    justify-content: center;
+    /*Trabalha com o direcionamento dos itens ou Cross Axis*/
+    align-items: center;
+    /*Trabalha com o alinhamento de cada linha dentro do container*/
+    align-content: space-between;
+    /*Alinha as linhas de um container flex quando há espaço extra no eixo cruzado.*/
+}
+
+.container div {
+    height: 200px;
+    /*Altura*/
+    width: 200px;
+    /*Largura*/
+}
+
+.big {
+    font-size: 3em;
+    /*Tamanho da fonte*/
+}
+
+.container div:nth-child(5) {
+    height: 400px;
+    /*Altura*/
+    font-size: 10em;
+    /*Tamanho da fonte*/
+    border: solid;
+    /*Borda*/
+    border-radius: 20px;
+    /*Bordas arredondadas*/
+    border-color: yellowgreen;
+    /*Cor da borda*/
+}
+
+.container div:nth-child(6):hover {
+    /*Hover é uma ação do mouse*/
+    background-color: black;
+    /*Cor de fundo*/
+    border: solid;
+    /*Borda*/
+    border-color: antiquewhite;
+    /*Cor da borda*/
+    color: yellow;
+    /*Cor*/
+    font-size: 10em;
+    /*Tamanho da fonte*/
+    height: 400px;
+    /*Altura*/
+}
